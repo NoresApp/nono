@@ -5,7 +5,7 @@ async function loadData() {
     toggleLoader("#listApps", true);
     toggleLoader("#footerApps", true);
     toggleLoader("#appCount", true, true);
-    const response = await fetch("/data/apps.json");
+    const response = await fetch("data/apps.json");
     const data = await response.json();
     displayData(data);
     displayFooterApps(data);
