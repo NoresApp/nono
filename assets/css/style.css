@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka');
+
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Fredoka'
 }
 body {
   scroll-behavior: smooth;
 }
 
-title {
+.bg-white {
+  background-color: #ffff;
+}
+
+.title {
   height: 8px;
   background-color: #ffff;
 }
@@ -25,4 +31,18 @@ title {
 
 .text {
   margin: 20px 0px;
+}
+
+.link-white {
+  color: #edf0f3 !important;
+}
+
+.footer__description {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__content {
+  flex: 1;
+  /* Ajoutez d'autres styles nécessaires pour le paragraphe */
 }

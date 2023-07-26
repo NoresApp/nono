@@ -1,0 +1,56 @@
+.app-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    margin-top: 15px;
+    transition: .1s ease-in-out background-color ;
+  }
+  
+  .app-card:hover {
+    background-color: rgba(16, 1, 1, 0.306);
+    cursor: pointer;
+  }
+
+  .app-card__content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  
+  .app-card__content .app-card_img {
+    margin-right: 25px;
+  }
+  
+  .app-card__content .app-card_img img {
+    height: 100px;
+    width: 100px;
+    background-color: rgba(16, 1, 1, 0.306);
+    padding: 16px;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  
+  .app-card__content .app-card_info {
+    flex: 1;
+  }
+  
+  .app-card__content .app-card_info .text-muted a {
+    color: #777;
+  }
+  
+  .app-card__footer {
+    display: flex;
+    align-items: center;
+    justify-content:end;
+  }
+  
+  .app-label {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #f5f5f5;
+    border-radius: 5px;
+    margin-right: 2px;
+  }
+  
