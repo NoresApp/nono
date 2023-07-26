@@ -1,11 +1,13 @@
-console.log("Chargement du script app.js");
+const HOSTNAME = window.location.pathname
 
 async function loadData() {
   try {
     toggleLoader("#listApps", true);
     toggleLoader("#footerApps", true);
     toggleLoader("#appCount", true, true);
-    const response = await fetch("data/apps.json");
+    const fetchResource = `${HOSTNAME}data/apps.json`
+    console.log(`Link to data is : ${fetchResource}`);
+    const response = await fetch(fetchResource);
     const data = await response.json();
     displayData(data);
     displayFooterApps(data);
@@ -38,7 +40,6 @@ function handleError(error) {
       <a class="btn btn-outline-danger" href="index.html"><i class="fas fa-sync-alt"></i> Recargar la página</a>
     </div>`
   );
-  console.log(message);
 }
 
 function toggleLoader(selector, state, isSmall = false, content = "") {
@@ -49,7 +50,6 @@ function toggleLoader(selector, state, isSmall = false, content = "") {
       !isSmall ? "mx-auto text-center mt-5 p-5" : ""
     } text-dark"></div>`;
   } else {
-    console.log("coco", content);
     document.querySelector(selector).innerHTML = content;
   }
 }
@@ -63,7 +63,6 @@ async function displayData(data) {
   appCount.innerText = `(${data.length})`;
   let item = "";
   data.forEach((app) => {
-    console.log(app);
     item += `
         <div class="col-sm-6">
 					<div class="app-card">
