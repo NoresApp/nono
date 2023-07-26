@@ -61,13 +61,10 @@ async function displayData(data) {
   toggleLoader("#listApps", false);
   toggleLoader("#appCount", false);
   appCount.innerText = `(${data.length})`;
-  let item = "",linkImage = `${window.location.origin}/`;
-    
-  if (HOSTNAME != "/") linkImage += HOSTNAME
-  
+  const linkImage = (HOSTNAME == "/") ? `${window.location.origin}/` : `${window.location.origin}${HOSTNAME}`;
   console.log(`Defaut URL link is : ${linkImage}`);
   
-
+  let item = "";
   data.forEach((app) => {
     let currentAppImageUrl = `${linkImage}${app.image_url}`
     console.log(`Current Image Link for ${app.name} is ${currentAppImageUrl}`);
