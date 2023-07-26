@@ -1,7 +1,7 @@
 console.log("Chargement du script app.js");
 
 async function loadData(){
-    const response = await fetch("apps.json");
+    const response = await fetch("../../data/apps.json");
     const data =  await response.json();
     displayData(data);
 }
@@ -15,7 +15,7 @@ async function displayData(data){
     data.forEach(app => {
         console.log(app);
         item += `
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <div class="col-lg-4 col-md-3 col-sm-2 col-xs-12">
         <div class="box-part text-center shadow-sm bg-dark rounded">
           <img src="${app.image_url}" width="50" alt="${app.name}">
           <div class="title">
