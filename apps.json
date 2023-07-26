@@ -14,34 +14,6 @@
         "image_url": "http://gradespaces.devlabacademy.net/assets/images/logo.png"
     },
     {
-        "name": "Postfiles",
-        "placeholder": "Application de publications de documents",
-        "description": "",
-        "link_url": "https://postfiles.onrender.com",
-        "image_url": "https://postfiles.onrender.com/assets/images/icon/android-chrome-192x192.png"
-    },
-    {
-        "name": "MyMeets",
-        "placeholder": "Application de gestion de reunions entreprise",
-        "description": "",
-        "link_url": "https://nomeets.onrender.com",
-        "image_url": "https://nomeets.onrender.com/assets/icons/android-chrome-192x192.png"
-    },
-    {
-        "name": "Certificate",
-        "placeholder": "Application de preparation de passage de certificats",
-        "description": "",
-        "link_url": "https://nocerficate.onrender.com/",
-        "image_url": "https://nocerficate.onrender.com/img/homeimg/android-chrome-192x192.png"
-    },
-    {
-        "name": "Schedule",
-        "placeholder": "Application de consultation d'emploi du temps",
-        "description": "",
-        "link_url": "https://schedules-docs-api.onrender.com",
-        "image_url": "https://schedules-docs-api.onrender.com/assets/images/logo.svg"
-    },
-    {
         "name": "Packages",
         "placeholder": "Application d'envoie de colis GP",
         "description": "",
