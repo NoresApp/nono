@@ -1,13 +1,13 @@
 [
     {
-        "name": "Classrooms",
+        "name": "Classmana",
         "placeholder": "Application de gestion des classes pour responsables",
         "description": "",
         "link_url": "http://classrooms.devlabacademy.net/",
         "image_url": "assets/images/apps/classrooms.logo.png"
     },
     {
-        "name": "Gradespaces",
+        "name": "Minotas",
         "placeholder": "Application de consultations des notes d'etudiant",
         "description": "",
         "link_url": "http://gradespaces.devlabacademy.net/",
