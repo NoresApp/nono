@@ -61,14 +61,22 @@ async function displayData(data) {
   toggleLoader("#listApps", false);
   toggleLoader("#appCount", false);
   appCount.innerText = `(${data.length})`;
-  let item = "";
+  let item = "",linkImage = `${window.location.origin}/`;
+    
+  if (HOSTNAME != "/") item += HOSTNAME
+  
+  console.log(`Defaut URL link is : ${linkImage}`);
+  
+
   data.forEach((app) => {
+    let currentAppImageUrl = `${linkImage}${app.image_url}`
+    console.log(`Current Image Link for ${app.name} is ${currentAppImageUrl}`);
     item += `
         <div class="col-sm-6">
 					<div class="app-card">
 						<div class="app-card__content">
 							<div class="app-card_img">
-								<img src="${app.image_url}" alt="${app.name} Logo">
+								<img src="${linkImage}${app.image_url}" alt="${app.name} Logo">
 							</div>
 							<div class="app-card_info">
                 <h4 class="mb-2"><a href="${app.link_url}" target='__blank' class="text-muted"><span class="app-card_company">${app.name}</span> </a></h4>
