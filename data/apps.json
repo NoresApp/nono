@@ -4,27 +4,27 @@
         "placeholder": "Application de gestion des classes pour responsables",
         "description": "",
         "link_url": "http://classrooms.devlabacademy.net/",
-        "image_url": "/assets/images/apps/classrooms.logo.png"
+        "image_url": "assets/images/apps/classrooms.logo.png"
     },
     {
         "name": "Gradespaces",
         "placeholder": "Application de consultations des notes d'etudiant",
         "description": "",
         "link_url": "http://gradespaces.devlabacademy.net/",
-        "image_url": "/assets/images/apps/gradespaces.logo.png"
+        "image_url": "assets/images/apps/gradespaces.logo.png"
     },
     {
         "name": "Packages",
         "placeholder": "Application d'envoie de colis GP",
         "description": "",
         "link_url": "https://nopackages.onrender.com/",
-        "image_url": "/assets/images/apps/packages.logo.png"
+        "image_url": "assets/images/apps/packages.logo.png"
     },
     {
         "name": "Pharmacy",
         "placeholder": "Application de livraison de medicament en ligne",
         "description": "",
         "link_url": "https://nopharmacy.onrender.com/",
-        "image_url": "/assets/images/apps/pharmacy.logo.png"
+        "image_url": "assets/images/apps/pharmacy.logo.png"
     }
 ]
