@@ -63,7 +63,7 @@ async function displayData(data) {
   appCount.innerText = `(${data.length})`;
   let item = "",linkImage = `${window.location.origin}/`;
     
-  if (HOSTNAME != "/") item += HOSTNAME
+  if (HOSTNAME != "/") linkImage += HOSTNAME
   
   console.log(`Defaut URL link is : ${linkImage}`);
   
